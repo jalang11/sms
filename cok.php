@@ -6,8 +6,8 @@ include 'tes.php';
 */
 $init = new Bom();
 //Eksekusi Call/Sms Boomber (Limit 3x/Jam)
-$init->type = ""; //Nomer Hp tujuan
-$init->no = ""; //Jumlah eksekusi
+$init->type = ""; //Jumlah eksekusi
+$init->no = ""; //Nomer Hp tujuan
 if ($init->type == 1) {
 	for ($i=0; $i < 2; $i++) { 
 	    $init->Verif($init->no,$init->type);
